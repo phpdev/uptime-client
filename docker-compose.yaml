@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+    client:
+        build: .
+        restart: unless-stopped
+        environment:
+            UPTIME_API_URL: ${UPTIME_API_URL}
+            UPTIME_API_KEY: ${UPTIME_API_KEY}
+            UPTIME_CLIENT_NAME: ${UPTIME_CLIENT_NAME}

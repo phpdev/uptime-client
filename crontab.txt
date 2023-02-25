@@ -1,0 +1,1 @@
+* * * * * php /srv/app/client.php >/dev/null 2>&1
