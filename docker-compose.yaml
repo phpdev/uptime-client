@@ -4,6 +4,7 @@ services:
     client:
         build: .
         restart: unless-stopped
+        network_mode: 'host'
         environment:
             UPTIME_API_URL: ${UPTIME_API_URL}
             UPTIME_API_KEY: ${UPTIME_API_KEY}
